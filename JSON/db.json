@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "id": 3,
+      "description": "Desserts candies and sweet breads",
+      "name": "zuzu"
+    },
+    {
+      "id": 4,
+      "description": "Cheeses",
+      "name": "nura"
+    },
+    {
+      "id": 6,
+      "description": "Prepared meats",
+      "name": "sona"
+    },
+    {
+      "description": "sfs",
+      "name": "sfsf",
+      "id": 7
+    },
+    {
+      "description": "sdf",
+      "name": "sf",
+      "id": 8
+    },
+    {
+      "description": "Desserts candies and sweet breads",
+      "name": "zuzu",
+      "id": 9
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "productName": "kitab",
+      "author": "Mehi"
+    }
+  ],
+  "comments": [
+    {
+      "userName": "homless",
+      "userSurname": "mery",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "userName": "nura",
+      "userSurname": "Mehi"
+    },
+    {
+      "nuserName": "filankes",
+      "id": 4
+    },
+    {
+      "userName": "axmed",
+      "userSurname": "Mehi",
+      "id": 5
+    }
+  ]
+}
