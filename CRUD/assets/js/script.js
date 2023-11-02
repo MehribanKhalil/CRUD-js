@@ -69,25 +69,31 @@ async function editData(postId) {
         document.getElementById('nameInp').value=selectedPost.name
         
         selectedPostId=postId
-        fetchData()
     } catch (error) {
         console.log(error);
     }
     
 }
 
-async function editData(postId) {
-    try {
-        const res= await axios.get(`${baseUrl}/${postId}`)
-        const selectedPost=res.data
-        document.getElementById('descriptionInp').value=selectedPost.description
-        document.getElementById('nameInp').value=selectedPost.name
-        
-        selectedPostId=postId
-        fetchData()
-    } catch (error) {
-        console.log(error);
+async function updateData() {
+    const descriptionInp = document.getElementById('descriptionInp').value
+    const nameInp = document.getElementById('nameInp').value
+    if (selectedPostId) {
+
+        try {           
+            await axios.put(`${baseUrl}/${selectedPostId}`,{
+                description:descriptionInp,
+                name:nameInp
+            })
+
+            
+            fetchData()
+        } catch (error) {
+            console.log(error);
+        }
     }
+
+    
     
 }
 
